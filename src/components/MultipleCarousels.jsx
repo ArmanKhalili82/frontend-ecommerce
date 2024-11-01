@@ -4,55 +4,63 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import u from '../assets/university.jpg'
 import w from '../assets/working.jpg'
+import productImage from '../assets/productImages/adrian-ordonez-P0W27GRvyww-unsplash.jpg'
+import productImage2 from '../assets/productImages/ahmed-rajgoli-shoaib-shakeel-FCsA8Adcgr4-unsplash.jpg'
+import productImage3 from '../assets/productImages/andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg'
+import productImage4 from '../assets/productImages/avechenri-2hEaLqoPgPQ-unsplash.jpg'
+import productImage5 from '../assets/productImages/yang-deng-2loKxdi6Hmo-unsplash.jpg'
+import productImage6 from '../assets/productImages/wengang-zhai-_fOL6ebfECQ-unsplash.jpg'
+import productImage7 from '../assets/productImages/t-kaiser-XF9zfijEQK8-unsplash.jpg'
+import productImage8 from '../assets/productImages/mediamodifier-ogmenj2NGho-unsplash.jpg'
 
 const MultipleCarousels = () => {
     const carouselItems = [
         {
             id: 1,
             title: "Our Best Sells",
-            imageUrl: u
+            imageUrl: productImage
         },
 
         {
             id: 2,
             title: "Our Autumn Sells",
-            imageUrl: w
+            imageUrl: productImage2
         },
 
         {
             id: 3,
             title: "T-shirt",
-            imageUrl: w
+            imageUrl: productImage3
         },
 
         {
             id: 4,
             title: "Shirt",
-            imageUrl: u
+            imageUrl: productImage4
         },
 
         {
             id: 5,
             title: "Pants",
-            imageUrl: w
+            imageUrl: productImage5
         },
 
         {
             id: 6,
             title: "Shoes",
-            imageUrl: u
+            imageUrl: productImage6
         },
 
         {
             id: 7,
             title: "Phones",
-            imageUrl: w
+            imageUrl: productImage7
         },
 
         {
             id: 8,
             title: "Jackets",
-            imageUrl: u
+            imageUrl: productImage8
         },
 
         {
@@ -78,6 +86,15 @@ const MultipleCarousels = () => {
         autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
       };
   return (
     <div className='mt-3 px-4'>

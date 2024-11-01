@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import u from '../assets/university.jpg'
 import w from '../assets/working.jpg'
+import productImage from '../assets/productImages/benjamin-rascoe-Z3N7m_r02TA-unsplash.jpg'
+import productImage2 from '../assets/productImages/yang-deng-2loKxdi6Hmo-unsplash.jpg'
 
 const Carousels = () => {
     const carouselItems = [
@@ -11,14 +13,14 @@ const Carousels = () => {
             id: 1,
             title: "Our Best Sells",
             description: "Best price with better offers",
-            imageUrl: u
+            imageUrl: productImage
         },
 
         {
             id: 2,
             title: "Our Autumn Sells",
             description: "Autumn price with amazing offers",
-            imageUrl: w
+            imageUrl: productImage2
         },
     ]
 

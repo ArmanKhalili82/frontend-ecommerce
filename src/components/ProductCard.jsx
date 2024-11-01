@@ -17,9 +17,9 @@ const ProductCard = ({ product }) => {
   }, [reviews]);
 
   return (
-    <div className="border p-4 rounded-md shadow-md flex flex-col">
+    <div className="border p-4 rounded-md shadow-md flex flex-col hover:border-blue-400">
       <img
-        src={product.image}
+        src={product.images[0].src}
         alt={product.name}
         className="h-48 w-full object-cover rounded-t-md"
       />
@@ -28,13 +28,16 @@ const ProductCard = ({ product }) => {
         <p className="text-gray-600">${product.price}</p>
         <p className="text-gray-600">{product.description}</p>
         {averageRating > 0 ? (
-          <p className="text-yellow-500">Rating: {averageRating} / 5</p>
+          <div>
+            <p className="text-yellow-500">Rating: {averageRating} / 5</p>
+            <p className="text-yellow-500">Comments: {reviews.length}</p>
+          </div>
         ) : (
           <p className="text-gray-400">No ratings yet</p>
         )}
       </div>
       <Link to={`/product/${product.id}`}>
-        <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+        <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-orange-500 duration-300">
           View Details
         </button>
       </Link>

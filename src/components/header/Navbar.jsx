@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { FaShopify } from "react-icons/fa6";
+import { IoCartSharp } from "react-icons/io5";
+import { IoLogIn } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -32,6 +34,8 @@ const Navbar = () => {
                 </ul>
                 <div className='hidden lg:flex justify-center space-x-12 items-center'>
                     <h2>Welcome</h2>
+                    <IoCartSharp className='cursor-pointer' size={25} color='white' />
+                    <IoLogIn className='cursor-pointer' size={25} color='white' />
                 </div>
                 <div className='lg:hidden md:flex flex-col justify-end'>
                     <button onClick={toggle}>
@@ -49,6 +53,8 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
+                        <IoCartSharp className='cursor-pointer' size={25} color='white' />
+                        <IoLogIn className='cursor-pointer' size={25} color='white' />
                 </div>
             )}
         </div>
