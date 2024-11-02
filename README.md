@@ -1,8 +1,5 @@
-# React + Vite
+Step 1 : Craete react app and install packages you need like redux tailwind.
+step 2 : Design your frontend and make sure everything is working and responsive.
+step 3 : Use libraries you need for better ui.
+step 4 : For reviews and products use redux.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
